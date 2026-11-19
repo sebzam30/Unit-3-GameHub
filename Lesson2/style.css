@@ -91,22 +91,53 @@ img {
 /* PART B: STEP 1 ▸ put your palette and fonts in :root */
 
 :root {
-    --bg: #41B6F9;
+    --bg: #37a0dd;
     --ink: #DB8B00;
     --primary: #22A61B;
     --accent: #C72171;
     --dark: #A95DDD;
-
+    --font: white, sans-serif;
 }
 /* STEP 2 ▸ use var() for every colour */
 .site-header {
+    background-color: var(--ink)
+}
+.btn-primary {
+    background-color: var(--accent)
+}
+.hero {
+    background-color: var(--primary)
+}
+main {
+    background-color: var(--bg)
+}
+footer {
     background-color: var(--dark)
 }
 
 /* STEP 3 ▸ one font for the body */
+body {
+    font-family: var(--font);
+    line-height: 1.6;
+}
 
 /* STEP 4 ▸ heading sizes in rem */
+h1 {
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
 
 /* STEP 5 ▸ a gradient on .hero */
+.hero {
+    background-image: linear-gradient(135deg, var(--dark), var(--primary))
+}
 
 /* STEP 6 ▸ text you can read on it */
+.tagline {
+    color: #140A1C;
+}
